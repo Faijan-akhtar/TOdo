@@ -1,7 +1,9 @@
 import express from "express";
 import router from "./Routs/userRouts.js";
 import Dbconnection from "./config/Db.js";
+import dotenv from 'dotenv'
 import cors from "cors";
+dotenv.config()
 const app = express();
 Dbconnection();
 app.use(express.json());
